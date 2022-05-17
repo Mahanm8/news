@@ -15,5 +15,12 @@ namespace news.BLL2
             newsDao newsDao = new newsDao();
             return newsDao.Loadfirstnews();
         }
+
+        public khabar loadnextnews(int id)
+        {
+            newsDao newsDao = new newsDao();
+            return newsDao.Loadnextnews(id);
+
+        }
     }
 }
